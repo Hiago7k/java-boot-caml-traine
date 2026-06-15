@@ -19,14 +19,19 @@ class Main {
 
         // Arrendondamento utilizando Math
         // ceil arrendondando por artimetica
-        double numero = 5.6;
-        double numeroArrendondado = Math.ceil(numero);
-        System.out.println(numeroArrendondado);
+//        double numero = 5.6;
+//        double numeroArrendondado = Math.ceil(numero);
+//        System.out.println(numeroArrendondado);
+//
+//        // floor arrendondando para baixo
+//        float numerof = 8.9f;
+//        int numeroArrendodadoF = (int) Math.floor(numerof); // forcando o tipo
+//        System.out.println(numeroArrendodadoF); // saida esperada 8
 
-        // floor arrendondando para baixo
-        float numerof = 8.9f;
-        int numeroArrendodadoF = (int) Math.floor(numerof); // forcando o tipo
-        System.out.println(numeroArrendodadoF); // saida esperada 8
+        // Random Numero
+        double aleatorio = Math.random();
+        int n = (int) (15 + aleatorio * (50-15));
+        System.out.println(n);
 
     }
 }
