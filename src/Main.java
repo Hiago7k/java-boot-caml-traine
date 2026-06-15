@@ -4,34 +4,24 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args)
     {
+        System.out.println("**************************");
+        System.out.println("-------Calculadora--------");
+        System.out.println("-------- + - = x ---------");
+        System.out.println("**************************");
+        System.out.print("Informe um valor: ");
+        Scanner numeroRecebido = new Scanner(System.in);
+        float numeroDaCalculadora = numeroRecebido.nextFloat();
 
-//        int numero = 10;
-//        int valor = 4 + numero--;
-//        System.out.println(valor); // 14 pos incremento
-//        System.out.println(numero); // 9
+        int restoDivisao = (int) numeroDaCalculadora % 2;
+        float raizQuadrada = (float) Math.sqrt(numeroDaCalculadora);
+        float raizCubica = (float) Math.cbrt(numeroDaCalculadora);
+        float elevadoAocubo = (float) Math.pow(numeroDaCalculadora,3);
+        float valorAbsoluto =  (float) Math.abs(-numeroDaCalculadora);
 
-        //Operadoras de Atribuicao
-//
-//       int x = 4;
-//       x += 2; // x = x + 2
-//        System.out.println(x);
-
-
-        // Arrendondamento utilizando Math
-        // ceil arrendondando por artimetica
-//        double numero = 5.6;
-//        double numeroArrendondado = Math.ceil(numero);
-//        System.out.println(numeroArrendondado);
-//
-//        // floor arrendondando para baixo
-//        float numerof = 8.9f;
-//        int numeroArrendodadoF = (int) Math.floor(numerof); // forcando o tipo
-//        System.out.println(numeroArrendodadoF); // saida esperada 8
-
-        // Random Numero
-        double aleatorio = Math.random();
-        int n = (int) (15 + aleatorio * (50-15));
-        System.out.println(n);
-
+        System.out.println("Resto da divisão por 2 é: " + restoDivisao);
+        System.out.println("Raiz Quadrada: " + raizQuadrada);
+        System.out.println("Raiz cúbica: " + raizCubica);
+        System.out.println("Elevado ao cubo: " + elevadoAocubo);
+        System.out.println("Valor absoluto: " + valorAbsoluto);
     }
 }
