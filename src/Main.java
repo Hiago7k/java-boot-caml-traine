@@ -4,16 +4,12 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args)
     {
-        Scanner dados = new Scanner(System.in);
-        System.out.println("=====================================");
-        System.out.println("Calculador idade");
-        System.out.println("=====================================");
-        System.out.println("Digite o ano de nascimento: ");
-        int anoNascimento = dados.nextInt();
 
-        int anoAtual = java.time.Year.now().getValue();
 
-        int resultado = anoAtual - anoNascimento;
-        System.out.println("Você tem " + resultado + " anos");
+        int numero = 10;
+        int valor = 4 + numero--;
+        System.out.println(valor); // 14 pos incremento
+        System.out.println(numero); // 9
+
     }
 }
