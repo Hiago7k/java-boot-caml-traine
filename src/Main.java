@@ -4,14 +4,23 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args)
     {
-       // Sistema de votação pessoas de 16 a menor de 18 podem votar opcionalmente
-        // pessoas de 18 até 70 sao obrigadas a votar
-        // pessomas acima de 70 votam opcionalmente
+      // Adivinhando um Numero AkiNumber
+        System.out.println("*******************************");
+        System.out.println("--- Bem vindo ao AkiNumber ---");
+        System.out.println("*******************************");
 
-        int idade = 19;
-        String eleitor;
+        System.out.println("Tente advinhar o número que estou pensando de 1 a 5 digite: ");
+        Scanner dados = new Scanner(System.in);
+        int numeroDoUsuario = dados.nextInt();
+        System.out.println(numeroDoUsuario);
 
-        eleitor = (idade >= 16 && idade < 18 || idade >= 70)?"pode votar se quiser":"voto obrigatorio";
-        System.out.println(eleitor);
+        double numeroSecreto = Math.random();
+        int num = (int) (1 + numeroSecreto * (5-1));
+        
+        String resposta;
+
+        resposta = (num==numeroDoUsuario)?"Voce acertou o numero":"Voce errou o numero";
+        System.out.println("O numero que pensei foi " + num);
+        System.out.println(resposta);
     }
 }
