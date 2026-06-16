@@ -4,12 +4,13 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args)
     {
-       // Operador Ternario
-        int n1, n2, r;
-        n1 = 14;
-        n2 = 8;
-        r = (n1>n2)?n1:n2;
-        System.out.println(r);
-
+       // Comparando Strings
+        String nome1 = "Hiago";
+        String nome2 = "Hiago";
+        String nome3 = new String("Hiago");
+        String res;
+        res = (nome1.equals(nome3))?"igual":"diferente";
+        //a variavel res vai receber ou a palavra igual ou a palavra diferente
+        System.out.println(res);
     }
 }
