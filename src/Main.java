@@ -5,19 +5,24 @@ class Main {
     public static void main(String[] args)
     {
       // Estruturas Condicionais
+        System.out.println("********************************");
+        System.out.println("Resultado escolar final de ano");
+        System.out.println("********************************");
+        Scanner teclado = new Scanner(System.in);
 
-        float n1, n2;
-        n1 = 1;
-        n2  = 8;
-        float m = (n1 + n2) / 2;
+        System.out.println("Digite a media do primeiro semestre: ");
+        float notaPrimeiroSemestre = teclado.nextFloat();
+        System.out.println("Digite a media do segundo semestre: ");
+        float notaSegundoSemestre = teclado.nextFloat();
+        float media = (notaPrimeiroSemestre + notaSegundoSemestre) / 2;
 
-        if(m >= 6){
-            System.out.println("Parabens passou de ano");
-            System.out.println("com a media " + m);
-        } else{
-            System.out.println("Reprovado");
+        if (media >= 6)
+        {
+            System.out.println("Aprovado media: " + media);
+        }else
+        {
+            System.out.println("Reprovado media: " + media);
         }
-
 
     }
 }
