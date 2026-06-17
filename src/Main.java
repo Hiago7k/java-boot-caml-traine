@@ -16,10 +16,12 @@ class Main {
         float notaSegundoSemestre = teclado.nextFloat();
         float media = (notaPrimeiroSemestre + notaSegundoSemestre) / 2;
 
-        if (media >= 6)
+        if (media >= 7)
         {
             System.out.println("Aprovado media: " + media);
-        }else
+        } else if (media >= 5 && media <= 6) {
+            System.out.println("Recuperação media: " + media);
+        } else
         {
             System.out.println("Reprovado media: " + media);
         }
