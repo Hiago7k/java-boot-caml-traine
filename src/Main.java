@@ -4,17 +4,17 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args)
     {
+      // Maior ou menor de idade
         Scanner teclado = new Scanner(System.in);
-        System.out.print("Digite sua primeira nota: ");
-        float n1 = teclado.nextFloat();
 
-        System.out.print("Digite sua segunda nota: ");
-        float n2 = teclado.nextFloat();
-        float m =  (n1 + n2) / 2;
+        System.out.println("Digite sua idade: ");
+        int idade = teclado.nextInt();
 
-        System.out.println("Sua média é " + m);
-        if(m > 9) {
-            System.out.println("Parabens pela sua nota " + m);
+        if(idade >= 18){
+            System.out.println("Maior de idade");
+        }else {
+            System.out.println("Menor de idade");
         }
+
     }
 }
