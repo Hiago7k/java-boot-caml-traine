@@ -4,18 +4,17 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args)
     {
-      // Maior ou menor de idade
+      // Par ou impar
         Scanner teclado = new Scanner(System.in);
-        int ano = 2026;
-        System.out.println("Em que ano você nasceu: ");
-        int nasc = teclado.nextInt();
+        System.out.println("Par ou impar");
+        System.out.println("Digite um número: ");
+        int numero = teclado.nextInt();
 
-        int idade = ano - nasc;
 
-        if (idade >= 18){
-            System.out.println("Maior de idade  voce tem " + idade + " anos");
+        if(numero % 2 == 0){
+            System.out.println("é par");
         }else {
-            System.out.println("Menor de idade voce tem " + idade + " anos") ;
+            System.out.println("Impar");
         }
     }
 }
