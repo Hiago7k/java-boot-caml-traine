@@ -6,15 +6,16 @@ class Main {
     {
       // Maior ou menor de idade
         Scanner teclado = new Scanner(System.in);
+        int ano = 2026;
+        System.out.println("Em que ano você nasceu: ");
+        int nasc = teclado.nextInt();
 
-        System.out.println("Digite sua idade: ");
-        int idade = teclado.nextInt();
+        int idade = ano - nasc;
 
-        if(idade >= 18){
-            System.out.println("Maior de idade");
+        if (idade >= 18){
+            System.out.println("Maior de idade  voce tem " + idade + " anos");
         }else {
-            System.out.println("Menor de idade");
+            System.out.println("Menor de idade voce tem " + idade + " anos") ;
         }
-
     }
 }
