@@ -5,14 +5,22 @@ class Main {
     public static void main(String[] args)
     {
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Ola seu final de semana foi bom? 1 - para sim 2 - par não ");
+        System.out.println("Digite o valor de A: ");
+        int a = teclado.nextInt();
+        System.out.println("Digite o valor de B: ");
+        int b = teclado.nextInt();
+        System.out.println("Digite o valor de C: ");
+        int c = teclado.nextInt();
 
-        int resposta = teclado.nextInt();
+        double d = Math.pow(b, 2) - 4 * a * c;
+        System.out.println("O valor de delta é " +  d);
 
-        if(resposta == 1){
-            System.out.println("Que bom que seu final de semana foi bom, me conte sobre ele");
-        } else{
-            System.out.println("Que pena que seu final de semana, não foi bom, oque aconteceu? ");
+        if (d < 0){
+            System.out.println("Não existem raizes reais");
+        }else {
+            System.out.println("Existem raizes reais");
+            double raizdeDelta =  Math.sqrt(d / 2);
         }
+
     }
 }
