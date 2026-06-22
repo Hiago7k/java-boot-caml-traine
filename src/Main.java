@@ -4,23 +4,21 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args)
     {
-        Scanner teclado = new Scanner(System.in);
-        System.out.println("Digite o valor de A: ");
-        int a = teclado.nextInt();
-        System.out.println("Digite o valor de B: ");
-        int b = teclado.nextInt();
-        System.out.println("Digite o valor de C: ");
-        int c = teclado.nextInt();
+        Scanner data = new Scanner(System.in);
+        System.out.println("Digite o ano que voces naceu: ");
+        int nasc = data.nextInt();
+        int idade = 2026 - nasc;
 
-        double d = Math.pow(b, 2) - 4 * a * c;
-        System.out.println("O valor de delta é " +  d);
-
-        if (d < 0){
-            System.out.println("Não existem raizes reais");
+        if (idade < 16)
+        {
+            System.out.println("Não pode votar " + idade);
         }else {
-            System.out.println("Existem raizes reais");
-            double raizdeDelta =  Math.sqrt(d / 2);
+            if ((idade >= 16 && idade < 18) || (idade > 70))
+            {
+                System.out.println("Voto opcional " + idade + " anos");
+            }else {
+                System.out.println("Voto obrigatorio " + idade  + " anos");
+            }
         }
-
     }
 }
