@@ -4,17 +4,15 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args)
     {
-      // Par ou impar
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Par ou impar");
-        System.out.println("Digite um número: ");
-        int numero = teclado.nextInt();
+        System.out.println("Ola seu final de semana foi bom? 1 - para sim 2 - par não ");
 
+        int resposta = teclado.nextInt();
 
-        if(numero % 2 == 0){
-            System.out.println("é par");
-        }else {
-            System.out.println("Impar");
+        if(resposta == 1){
+            System.out.println("Que bom que seu final de semana foi bom, me conte sobre ele");
+        } else{
+            System.out.println("Que pena que seu final de semana, não foi bom, oque aconteceu? ");
         }
     }
 }
