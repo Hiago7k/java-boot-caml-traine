@@ -4,12 +4,18 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args)
     {
-       // Repetição com teste lógico no final
+       // do while exemplo
+        int n, s=0;
+        Scanner data = new Scanner(System.in);
+        String resp;
 
-        int cc = 0;
-        do {
-            System.out.println("Cambalhota");
-            cc++;
-        }while(cc<4);
+        do{
+            System.out.println("Digite um número");
+            n = data.nextInt();
+            s += n; // s + s = n;
+            System.out.println("Quer continuar? [S/N]");
+            resp = data.next();
+        }while (resp.equals("S"));
+        System.out.println("A soma de todos os valores é: " + s);
     }
 }
