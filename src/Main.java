@@ -4,17 +4,21 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args)
     {
-        int cambalhota = 0;
-        while (cambalhota < 10){
-            cambalhota++ ;
-            if (cambalhota == 2 || cambalhota == 3 || cambalhota == 4) {
-                continue;
-            }
+        Scanner data = new Scanner(System.in);
+        System.out.println("Contador de dividas no més");
+        System.out.println("Digite a quantidade de parcelas, que voce possui no seu cartao");
+        int numeroDeParcelas  = data.nextInt();
 
-            if(cambalhota == 7){
-                break;
-            }
-            System.out.println("Dando uma cambolha pela vez: " + cambalhota);
+        System.out.println("Agora digite o valor da parcela: ");
+        float valorParcela = data.nextFloat();
+
+        float contador = 0;
+
+        while (contador < numeroDeParcelas)
+        {
+            System.out.println("Somando total de parcelas: " + numeroDeParcelas);
+            contador = numeroDeParcelas * valorParcela;
+            System.out.println("Valor total a pagar: " + contador);
         }
     }
 }
