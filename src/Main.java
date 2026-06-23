@@ -5,20 +5,29 @@ class Main {
     public static void main(String[] args)
     {
         Scanner data = new Scanner(System.in);
-        System.out.println("Contador de dividas no més");
-        System.out.println("Digite a quantidade de parcelas, que voce possui no seu cartao");
-        int numeroDeParcelas  = data.nextInt();
+        // calculo de fatorial
+        // 4 x 3 x 2 x 1
+        // ou seja o fatorial é o numero que escolhemos 10
+        // ai fazemos o 10 x 9 x 8 x 7 x 6 x 5 x 4 x 3 x 2 1
+        // o resultado final seria 5 x 4 x 3 x 2 x 1 = 120
+        // 120 seria o fatorial
 
-        System.out.println("Agora digite o valor da parcela: ");
-        float valorParcela = data.nextFloat();
 
-        float contador = 0;
 
-        while (contador < numeroDeParcelas)
-        {
-            System.out.println("Somando total de parcelas: " + numeroDeParcelas);
-            contador = numeroDeParcelas * valorParcela;
-            System.out.println("Valor total a pagar: " + contador);
+        int i = 1;
+        int a = 0;
+
+        while (i < 10){
+            ++a; // 10 vezes o a vira 11
+            i = i + 1; // 2
+            if (a> 6) i++; // essa espressao vai ser true apenas 4 vezes 2 6 8
         }
+        System.out.println(i); // aqui é 11
+        System.out.println(a); // aqui é 8
+
+
+
+
+
     }
 }
