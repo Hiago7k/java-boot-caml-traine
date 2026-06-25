@@ -5,11 +5,10 @@ class Main {
     public static void main(String[] args)
     {
         // Vetores Variaveis composta
-        int n[] = {10,21,33,42};
-
-        for(int c = 0; c<=3; c++){
-            System.out.println(n[c]);
-        }
+            int n[] = {10,21,33,42};
+            for(int c = 0; c<= n.length-1; c++){
+                System.out.println(n[c]);
+            }
 
     }
 }
