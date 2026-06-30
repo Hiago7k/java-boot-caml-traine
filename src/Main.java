@@ -7,14 +7,21 @@ import java.util.Scanner;
 
 class Main {
 
+
+    // Método sem retorno
     static void soma (int a, int b){
         int soma = a + b;
         System.out.println("A soma é: " + soma);
-        System.out.println("Método que criei e executado depois");
+    }
+
+    static int somaComRetorno (int a, int b){
+        int soma = a + b;
+        return soma;
     }
 
     public static void main(String[] args) {
-        System.out.println("Método Main é executado primeiro");
-        soma(10,2);
+        soma(10,2); // soma sem retonro
+        int resposta = somaComRetorno(10,50);
+        System.out.println(resposta);
     }
 }
